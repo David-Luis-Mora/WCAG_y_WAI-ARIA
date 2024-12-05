@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Zapatos Deportivos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .precio {
+      font-size: 20px;
+      color: red;
+    }
+    .boton {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Zapatos Deportivos</h1>
+    <div>
+      <!-- El atributo alt describe la imagen para mejor accesibilidad -->
+      <img src="zapatos.jpg" alt="Zapatos deportivos para correr">
+      <p>Los mejores zapatos para correr.</p>
+      <!-- El aria-label describe el elemento -->
+      <p class="precio"  aria-label="Precio 50 dólares">Precio: $50</p>
+    </div>
+    <!-- El aria-label describe el elemento -->
+    <button class="boton" onclick="alert('Producto añadido al carrito')" aria-label="Añadir al carrito">Añadir al carrito</button>
+  </div>
+</body>
+</html>
+

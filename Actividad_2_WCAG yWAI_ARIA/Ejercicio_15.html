@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Menú Interactivo</title>
+  <style>
+    .submenu {
+      display: none;
+    }
+    .menu:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menú de Opciones</h1>
+  <div class="menu">
+    <!-- El atributo expanded indica si un elemento está expandido -->
+    <!-- El atributo  aria-controls define el ID de un elemento controlado por el actual -->
+    <button aria-haspopup="true" aria-expanded="false" aria-controls="submenu" onclick="toggleMenu()">Opciones</button>
+    <div class="submenu">
+      <p>Opción 1</p>
+      <p>Opción 2</p>
+      <p>Opción 3</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var submenu = document.querySelector('.submenu');
+      var isExpanded = submenu.style.display === 'block';
+      submenu.style.display = isExpanded ? 'none' : 'block';
+      document.querySelector('button').setAttribute('aria-expanded', !isExpanded);
+    }
+  </script>
+</body>
+</html>

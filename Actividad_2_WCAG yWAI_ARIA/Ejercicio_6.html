@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Notificaciones</title>
+  <script>
+    function mostrarNotificacion() {
+      document.getElementById('notificacion').innerText = 'Cambio guardado';
+    }
+  </script>
+</head>
+<body>
+  <button onclick="mostrarNotificacion()">Guardar</button>
+  <!-- - 'role="status"': Define que este elemento será utilizado para notificaciones o actualizaciones de estado que el usuario debe conocer.
+  - 'aria-live="polite"': Indica que la actualización de este contenido no interrumpe al usuario, pero debe ser anunciado cuando ocurra.
+  - 'aria-label="Se muestra el mensaje que se ha guardado"': Proporciona una descripción accesible del propósito de la notificación. -->
+  <div id="notificacion" role="status" aria-live="polite" aria-label="Se muestra el mensaje que se ha guardado"></div>
+</body>
+</html>

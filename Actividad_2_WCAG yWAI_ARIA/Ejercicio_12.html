@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mi Blog</title>
+</head>
+<body>
+  <div>
+    <!-- El aria-label describe el elemento -->
+    <nav  aria-label="Menú de navegación principal">
+      <ul>
+        <!-- El aria-label describe el elemento -->
+        <li><a href="/Inicio" aria-label="Ir al inicio">Inicio</a></li>
+        <!-- El aria-label describe el elemento -->
+        <li><a href="/Sobre_mi" aria-label="Ir a Sobre mí">Sobre mí</a></li>
+        <!-- El aria-label describe el elemento -->
+        <li><a href="/Contacto" aria-label="Ir al Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- El aria-labelledby referencia al título del artículo reciente para mejorar la accesibilidad -->
+    <section  aria-labelledby="articulo-reciente">
+      <h2>Artículo Reciente</h2>
+      <p>Este es el contenido del artículo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- El aria-label describe el elemento -->
+      <a href="#" aria-label="Leer más sobre el artículo reciente">Leer más</a>
+    </section>
+     <!-- El aria-labelledby referencia al título del artículo reciente para mejorar la accesibilidad -->
+    <section aria-labelledby="otro-articulo">
+      <h2>Otro Artículo</h2>
+      <p>Contenido del segundo artículo. Lorem ipsum dolor sit amet.</p>
+      <a href="#" aria-label="Leer más sobre otro artículo">Leer más</a>
+    </section>
+  </div>
+</body>
+</html>
